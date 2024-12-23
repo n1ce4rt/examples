@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from './ClickAnimation.module.css';
 import { Wrapper } from '../../components';
-import { Divider, Typography } from 'antd'; // Подключаем стили
+import { Divider } from 'antd'; // Подключаем стили
 
 interface Spark {
   id: string;
@@ -47,8 +47,7 @@ export const ClickAnimation: React.FC = () => {
 
   return (
     <Wrapper>
-      <Typography>Click</Typography>
-      <Divider />
+      <Divider>Click</Divider>
       <div
         onClick={handleClick}
         style={{

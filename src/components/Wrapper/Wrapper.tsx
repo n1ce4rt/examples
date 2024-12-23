@@ -18,6 +18,7 @@ export const Wrapper: React.FC<IProps> = ({ children }) => {
         width: '50%',
         margin: '10vh auto',
         position: 'relative',
+
         background: colorBgContainer,
         borderRadius: borderRadiusLG,
       }}
