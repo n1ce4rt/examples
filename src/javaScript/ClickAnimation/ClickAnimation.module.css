@@ -1,0 +1,19 @@
+@keyframes spark-animation {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.5);
+        opacity: 0;
+    }
+}
+
+.spark {
+    position: absolute;
+    width: 4px;
+    height: 2px;
+    background-color: black;
+    pointer-events: none;
+    animation: spark-animation 0.6s ease-out forwards;
+}
